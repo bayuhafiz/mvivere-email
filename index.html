@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MVivere Mailer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body style="background-color: #1E1B1B">
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <div class="well" style="margin-top: 10%;">
+    <h3>Fill form below to send an email.</h3>
+    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email to <small> required</small></label>
+                <input type="email" class="form-control" id="email" placeholder="Enter destination email" required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Subject <small> required</small></label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">CC <small> optional</small></label>
+                <input type="email" class="form-control" id="cc" placeholder="Enter CC email">
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">BCC <small> optional</small></label>
+                <input type="email" class="form-control" id="bcc" placeholder="Enter BCC email">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message <small> required</small></label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+    </form>
+    </div>
+</div>
+</div>
+</body>
+<script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
+</html>
